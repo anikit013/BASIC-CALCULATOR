@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>CALCULATOR</title>
+    </head>
+<script>
+    function Add()
+    {
+    var x=parseInt(document.getElementById("p1").value);
+    var y=parseInt(document.getElementById("p2").value);
+        var a=parseInt(x+y);
+        alert(a+"   is sum")
+    }
+    function Sub()
+    {
+        var x=parseInt(document.getElementById("p1").value);
+    var y=parseInt(document.getElementById("p2").value);
+        var a=parseInt(x-y);
+        alert(a+"  is sub")
+    }
+     function Multiply()
+    {
+        var x=parseInt(document.getElementById("p1").value);
+    var y=parseInt(document.getElementById("p2").value);
+        var a=parseInt(x*y);
+        alert(a+"  is multiply")
+    }
+    function Division()
+    {
+        var x=parseInt(document.getElementById("p1").value);
+    var y=parseInt(document.getElementById("p2").value);
+        var a=parseInt(x/y);
+        alert(a+" is Division")
+    }
+   function Square()
+    {
+        var x=parseInt(document.getElementById("p1").value);
+        var a=parseInt(x*x);
+        alert(a+"  is Square")
+    }
+    function Cube()
+    {
+        var x=parseInt(document.getElementById("p1").value);
+        var a=parseInt(x*x*x);
+        alert(a+"  is Cube")
+    }
+    </script>
+<body>
+    <center>
+        <h1>Enter the first number</h1>
+        <h3>NOTE:For Percentage,Square,Cube Only Fill First Part</h3>
+        <br>
+    <input id="p1" type="number" placeholder="First Number">
+        <br>
+        <br>
+        <h1>Enter the second number</h1>
+        <br>
+        <input id="p2" type="number" placeholder="Second Number">
+        <br>
+        <br>
+        <button onclick="Add()">Addition</button>
+        <br>
+        <br>
+        <button onclick="Sub()">Subtaction</button>
+        <br>
+        <br>
+        <button onclick="Multiply()" >Multiplication</button>
+        <br>
+        <br>
+        <button onclick="Division()">Division</button>
+        <br>
+        <br>
+      <button onclick="Square()">Square</button>
+        <br>
+        <br>
+        <button onclick="Cube()">Cube</button>
+        <br>
+        <br>
+    </center>
+    </body>
+</html>
